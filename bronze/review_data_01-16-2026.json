@@ -1,42 +1,32 @@
 [
     {
         "grade": 5,
-        "comment": "Sharable user-facing extranet",
-        "product_id": 1001
-    },
-    {
-        "grade": 5,
-        "comment": "Business-focused high-level artificial intelligence",
-        "product_id": 2001
-    },
-    {
-        "grade": 5,
-        "comment": "Automated full-range standardization",
-        "product_id": 4
-    },
-    {
-        "grade": 2,
-        "comment": "Open-architected client-server architecture",
-        "product_id": 2001
-    },
-    {
-        "grade": 2,
-        "comment": "Advanced local strategy",
-        "product_id": 6
+        "comment": "Function-based background flexibility",
+        "product_id": 7006
     },
     {
         "grade": 4,
-        "comment": "Multi-channeled well-modulated circuit",
-        "product_id": 5001
+        "comment": "Open-architected national forecast",
+        "product_id": 3000
+    },
+    {
+        "grade": 2,
+        "comment": "Re-engineered disintermediate collaboration",
+        "product_id": 2004
+    },
+    {
+        "grade": 2,
+        "comment": "Customer-focused transitional budgetary management",
+        "product_id": 2001
+    },
+    {
+        "grade": 5,
+        "comment": "Exclusive didactic implementation",
+        "product_id": 3000
     },
     {
         "grade": 3,
-        "comment": "Fundamental composite implementation",
-        "product_id": 3006
-    },
-    {
-        "grade": 1,
-        "comment": "Reactive stable migration",
-        "product_id": 2001
+        "comment": "Proactive multimedia adapter",
+        "product_id": 8001
     }
 ]

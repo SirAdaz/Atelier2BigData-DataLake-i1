@@ -1,32 +1,42 @@
 [
     {
         "grade": 4,
-        "comment": "Expanded static Graphic Interface",
-        "product_id": 6004
-    },
-    {
-        "grade": 3,
-        "comment": "Up-sized zero-defect data-warehouse",
-        "product_id": 1001
+        "comment": "Profit-focused modular collaboration",
+        "product_id": 7005
     },
     {
         "grade": 5,
-        "comment": "Synergized interactive neural-net",
-        "product_id": 5000
-    },
-    {
-        "grade": 5,
-        "comment": "Versatile hybrid intranet",
-        "product_id": 5004
-    },
-    {
-        "grade": 4,
-        "comment": "Face-to-face attitude-oriented support",
-        "product_id": 4001
+        "comment": "Profit-focused systemic implementation",
+        "product_id": 6005
     },
     {
         "grade": 1,
-        "comment": "Business-focused homogeneous analyzer",
-        "product_id": 5001
+        "comment": "Balanced zero-defect definition",
+        "product_id": 2003
+    },
+    {
+        "grade": 2,
+        "comment": "Operative multi-state matrices",
+        "product_id": 3007
+    },
+    {
+        "grade": 3,
+        "comment": "Grass-roots system-worthy throughput",
+        "product_id": 3003
+    },
+    {
+        "grade": 2,
+        "comment": "Focused multi-state initiative",
+        "product_id": 8003
+    },
+    {
+        "grade": 3,
+        "comment": "Total demand-driven capacity",
+        "product_id": 7000
+    },
+    {
+        "grade": 3,
+        "comment": "Phased coherent leverage",
+        "product_id": 7004
     }
 ]
