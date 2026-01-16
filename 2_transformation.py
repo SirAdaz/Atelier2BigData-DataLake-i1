@@ -10,7 +10,7 @@ os.makedirs("silver", exist_ok=True)
 # =========================
 
 # Lister tous les fichiers CSV de ventes
-sales_files = Path(".").glob("vente_*.csv")
+sales_files = Path(".").glob("sales_data_*.csv")
 
 dfs_sales = []
 
@@ -45,7 +45,7 @@ print(f"✅ {len(dfs_sales)} fichiers CSV fusionnés")
 print(f"📦 {len(df_sales_final)} lignes finales")
 
 
-review_files = Path(".").glob("vente_*.json")
+review_files = Path(".").glob("review_data_*.json")
 
 dfs_reviews = []
 
