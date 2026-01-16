@@ -1,0 +1,47 @@
+[
+    {
+        "grade": 1,
+        "comment": "Object-based composite capability",
+        "product_id": 12001
+    },
+    {
+        "grade": 2,
+        "comment": "Monitored multimedia application",
+        "product_id": 2004
+    },
+    {
+        "grade": 5,
+        "comment": "Team-oriented demand-driven algorithm",
+        "product_id": 1007
+    },
+    {
+        "grade": 3,
+        "comment": "Re-engineered holistic flexibility",
+        "product_id": 6001
+    },
+    {
+        "grade": 5,
+        "comment": "Switchable heuristic forecast",
+        "product_id": 1002
+    },
+    {
+        "grade": 4,
+        "comment": "Realigned static strategy",
+        "product_id": 5001
+    },
+    {
+        "grade": 4,
+        "comment": "Secured multi-state matrices",
+        "product_id": 1007
+    },
+    {
+        "grade": 3,
+        "comment": "User-centric national algorithm",
+        "product_id": 1005
+    },
+    {
+        "grade": 5,
+        "comment": "Visionary 24hour help-desk",
+        "product_id": 8002
+    }
+]
