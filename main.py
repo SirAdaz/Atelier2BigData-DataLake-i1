@@ -24,8 +24,15 @@ def main():
         spec = importlib.util.spec_from_file_location("ingestion", "1_ingestion.py")
         ingestion = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(ingestion)
+        print("   ✅ Ingestion terminée")
+    except ImportError as e:
+        print(f"❌ Erreur d'import : {e}")
+        print("   Vérifiez que toutes les dépendances sont installées (faker, utils.py)")
+        sys.exit(1)
     except Exception as e:
         print(f"❌ Erreur lors de l'ingestion : {e}")
+        import traceback
+        traceback.print_exc()
         sys.exit(1)
     
     # Étape 2 : Transformation
@@ -33,11 +40,21 @@ def main():
     print("ÉTAPE 2 : TRANSFORMATION → Silver")
     print("=" * 60)
     try:
+        # Vérifier que des fichiers existent dans bronze
+        bronze_files = list(Path("bronze").glob("*"))
+        if len(bronze_files) == 0:
+            print("❌ Aucun fichier trouvé dans bronze/")
+            print("   Assurez-vous que l'étape d'ingestion a fonctionné")
+            sys.exit(1)
+        
         spec = importlib.util.spec_from_file_location("transformation", "2_transformation.py")
         transformation = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(transformation)
+        print("   ✅ Transformation terminée")
     except Exception as e:
         print(f"❌ Erreur lors de la transformation : {e}")
+        import traceback
+        traceback.print_exc()
         sys.exit(1)
     
     # Étape 3 : Calcul
@@ -45,11 +62,22 @@ def main():
     print("ÉTAPE 3 : CALCUL → Gold")
     print("=" * 60)
     try:
+        # Vérifier que les fichiers Silver existent
+        if not Path("silver/testFichierCSV.parquet").exists():
+            print("❌ Fichier silver/testFichierCSV.parquet introuvable")
+            sys.exit(1)
+        if not Path("silver/testFichierJSON.parquet").exists():
+            print("❌ Fichier silver/testFichierJSON.parquet introuvable")
+            sys.exit(1)
+        
         spec = importlib.util.spec_from_file_location("calcul", "3_calcul.py")
         calcul = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(calcul)
+        print("   ✅ Calcul terminé")
     except Exception as e:
         print(f"❌ Erreur lors du calcul : {e}")
+        import traceback
+        traceback.print_exc()
         sys.exit(1)
     
     # Étape 4 : Visualisation
@@ -57,11 +85,19 @@ def main():
     print("ÉTAPE 4 : VISUALISATION")
     print("=" * 60)
     try:
+        # Vérifier que le fichier Gold existe
+        if not Path("gold/produits_performance.parquet").exists():
+            print("❌ Fichier gold/produits_performance.parquet introuvable")
+            sys.exit(1)
+        
         spec = importlib.util.spec_from_file_location("visualisation", "4_visualisation.py")
         visualisation = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(visualisation)
+        print("   ✅ Visualisation terminée")
     except Exception as e:
         print(f"❌ Erreur lors de la visualisation : {e}")
+        import traceback
+        traceback.print_exc()
         sys.exit(1)
     
     # Résumé final

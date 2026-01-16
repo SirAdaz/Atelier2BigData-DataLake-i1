@@ -1,52 +1,32 @@
 [
     {
-        "grade": 1,
-        "comment": "Adaptive fault-tolerant alliance",
-        "product_id": 4008
-    },
-    {
         "grade": 4,
-        "comment": "Enterprise-wide asymmetric extranet",
-        "product_id": 9002
-    },
-    {
-        "grade": 1,
-        "comment": "Triple-buffered object-oriented moratorium",
-        "product_id": 5002
-    },
-    {
-        "grade": 5,
-        "comment": "Multi-channeled mobile product",
-        "product_id": 11003
-    },
-    {
-        "grade": 5,
-        "comment": "Persevering needs-based framework",
-        "product_id": 2004
-    },
-    {
-        "grade": 5,
-        "comment": "Distributed eco-centric infrastructure",
-        "product_id": 3004
-    },
-    {
-        "grade": 4,
-        "comment": "Seamless reciprocal task-force",
-        "product_id": 0
+        "comment": "Expanded static Graphic Interface",
+        "product_id": 6004
     },
     {
         "grade": 3,
-        "comment": "Secured even-keeled strategy",
+        "comment": "Up-sized zero-defect data-warehouse",
         "product_id": 1001
     },
     {
-        "grade": 3,
-        "comment": "Cross-platform directional budgetary management",
-        "product_id": 10002
+        "grade": 5,
+        "comment": "Synergized interactive neural-net",
+        "product_id": 5000
+    },
+    {
+        "grade": 5,
+        "comment": "Versatile hybrid intranet",
+        "product_id": 5004
+    },
+    {
+        "grade": 4,
+        "comment": "Face-to-face attitude-oriented support",
+        "product_id": 4001
     },
     {
         "grade": 1,
-        "comment": "Distributed fresh-thinking hierarchy",
-        "product_id": 1006
+        "comment": "Business-focused homogeneous analyzer",
+        "product_id": 5001
     }
 ]

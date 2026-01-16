@@ -7,15 +7,13 @@ os.makedirs("gold", exist_ok=True)
 # Charger les données nettoyées
 df_sales = pd.read_parquet("silver/testFichierCSV.parquet")
 df_reviews = pd.read_parquet("silver/testFichierJSON.parquet")
-
-# Renommer les colonnes pour uniformiser avec le reste du pipeline
 df_sales = df_sales.rename(columns={
     'id_prod': 'id_produit',
-    'date_vente': 'date'  # Renommer date_vente en date pour compatibilité
+    'date_vente': 'date'
 })
 df_reviews = df_reviews.rename(columns={'id_prod': 'id_produit'})
 
-# ========== CALCULS SUR LES VENTES ==========
+# CALCULS SUR LES VENTES
 ca_par_produit = df_sales.groupby('id_produit').agg(
     chiffre_affaires=('prix', 'sum'),
     nombre_ventes=('prix', 'count'),
@@ -27,7 +25,7 @@ ca_par_produit = df_sales.groupby('id_produit').agg(
 # Calculer le CA moyen par vente
 ca_par_produit['ca_moyen_par_vente'] = ca_par_produit['chiffre_affaires'] / ca_par_produit['nombre_ventes']
 
-# ========== CALCULS SUR LES AVIS ==========
+# CALCULS SUR LES AVIS
 notes_par_produit = df_reviews.groupby('id_produit').agg(
     note_moyenne=('note', 'mean'),
     nombre_avis=('note', 'count'),
@@ -39,7 +37,7 @@ notes_par_produit = df_reviews.groupby('id_produit').agg(
 # Calculer le taux de réponse (avis / ventes)
 # On le fera après la jointure
 
-# ========== CALCULS TEMPORELS (si date disponible) ==========
+# CALCULS TEMPORELS
 if 'date' in df_sales.columns:
     dates_par_produit = df_sales.groupby('id_produit').agg(
         date_premiere_vente=('date', 'min'),

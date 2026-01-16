@@ -1,17 +1,42 @@
 [
     {
+        "grade": 5,
+        "comment": "Sharable user-facing extranet",
+        "product_id": 1001
+    },
+    {
+        "grade": 5,
+        "comment": "Business-focused high-level artificial intelligence",
+        "product_id": 2001
+    },
+    {
+        "grade": 5,
+        "comment": "Automated full-range standardization",
+        "product_id": 4
+    },
+    {
+        "grade": 2,
+        "comment": "Open-architected client-server architecture",
+        "product_id": 2001
+    },
+    {
+        "grade": 2,
+        "comment": "Advanced local strategy",
+        "product_id": 6
+    },
+    {
+        "grade": 4,
+        "comment": "Multi-channeled well-modulated circuit",
+        "product_id": 5001
+    },
+    {
         "grade": 3,
-        "comment": "Diverse asymmetric policy",
-        "product_id": 1
+        "comment": "Fundamental composite implementation",
+        "product_id": 3006
     },
     {
         "grade": 1,
-        "comment": "Persevering global workforce",
-        "product_id": 4007
-    },
-    {
-        "grade": 1,
-        "comment": "Grass-roots logistical application",
-        "product_id": 1002
+        "comment": "Reactive stable migration",
+        "product_id": 2001
     }
 ]
