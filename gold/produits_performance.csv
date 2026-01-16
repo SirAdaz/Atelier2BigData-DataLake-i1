@@ -1,4 +1,4 @@
-id_produit,chiffre_affaires,nombre_ventes,note_moyenne,nombre_avis
-P001,899.97,3,4.5,2
-P002,448.5,3,2.5,2
-P003,179.98,2,4.5,2
+id_produit,chiffre_affaires,nombre_ventes,prix_moyen,prix_min,prix_max,ca_moyen_par_vente,note_moyenne,nombre_avis,note_min,note_max,ecart_type_notes,taux_reponse,score_composite,classement_ca,classement_note,classement_composite,date_premiere_vente,date_derniere_vente,duree_activite_jours,ventes_par_jour
+P001,899.97,3,299.99,299.99,299.99,299.99,4.5,2,4,5,0.7071067811865476,66.66666666666666,0.95,1.0,1.0,1.0,2025-01-15,2025-01-17,3,1.0
+P002,448.5,3,149.5,149.5,149.5,149.5,2.5,2,2,3,0.7071067811865476,66.66666666666666,0.49917497249908327,2.0,2.0,3.0,2025-01-15,2025-01-18,4,0.75
+P003,179.98,2,89.99,89.99,89.99,89.99,4.5,2,4,5,0.7071067811865476,100.0,0.5499922219629543,3.0,1.0,2.0,2025-01-16,2025-01-18,3,0.6666666666666666
