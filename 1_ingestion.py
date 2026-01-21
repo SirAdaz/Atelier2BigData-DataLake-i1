@@ -35,6 +35,7 @@ def create_sales_data(nb_files: int, faker) -> list[int]:
         date_of_file = (datetime.now() - timedelta(days=f)).strftime("%m-%d-%Y")
         nb_sales = random.randint(3,10)
         with open("./bronze/sales_data_"+date_of_file+".csv","w") as file:
+            file.write("product_id,price,date,client\n")
 
             for p in range(nb_sales):
                 sale = create_sale(f,p,date_of_file, faker)
