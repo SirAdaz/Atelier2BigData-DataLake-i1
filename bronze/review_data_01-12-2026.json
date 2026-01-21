@@ -1,0 +1,47 @@
+[
+    {
+        "grade": 1,
+        "comment": "Business-focused executive archive",
+        "product_id": 1000
+    },
+    {
+        "grade": 4,
+        "comment": "Devolved multi-state neural-net",
+        "product_id": 1000
+    },
+    {
+        "grade": 3,
+        "comment": "Reduced cohesive open system",
+        "product_id": 5001
+    },
+    {
+        "grade": 3,
+        "comment": "Progressive 3rdgeneration benchmark",
+        "product_id": 7000
+    },
+    {
+        "grade": 1,
+        "comment": "Distributed methodical circuit",
+        "product_id": 7005
+    },
+    {
+        "grade": 2,
+        "comment": "User-centric web-enabled open architecture",
+        "product_id": 5000
+    },
+    {
+        "grade": 1,
+        "comment": "Integrated interactive standardization",
+        "product_id": 2000
+    },
+    {
+        "grade": 5,
+        "comment": "Programmable actuating circuit",
+        "product_id": 1003
+    },
+    {
+        "grade": 4,
+        "comment": "Proactive didactic challenge",
+        "product_id": 4003
+    }
+]
