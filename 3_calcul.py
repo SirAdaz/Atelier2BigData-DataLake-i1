@@ -4,7 +4,6 @@ import os
 
 os.makedirs("gold", exist_ok=True)
 
-# Charger les données nettoyées
 df_sales = pd.read_parquet("silver/testFichierCSV.parquet")
 df_reviews = pd.read_parquet("silver/testFichierJSON.parquet")
 df_sales = df_sales.rename(columns={
@@ -31,11 +30,8 @@ notes_par_produit = df_reviews.groupby('id_produit').agg(
     nombre_avis=('note', 'count'),
     note_min=('note', 'min'),
     note_max=('note', 'max'),
-    ecart_type_notes=('note', 'std')  # Variabilité de satisfaction
+    ecart_type_notes=('note', 'std')
 ).reset_index()
-
-# Calculer le taux de réponse (avis / ventes)
-# On le fera après la jointure
 
 # CALCULS TEMPORELS
 if 'date' in df_sales.columns:

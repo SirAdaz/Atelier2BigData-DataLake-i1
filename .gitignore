@@ -1,3 +1,5 @@
 ./bronze/
+./silver/
+./gold/
 ./__pycache__/
 .idea

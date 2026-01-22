@@ -30,6 +30,11 @@ for file in sales_files:
         "price": "prix",
         "client": "id_client"
     })
+    
+    df["id_prod"] = df["id_prod"].astype(str).str.strip()
+    df["prix"] = pd.to_numeric(df["prix"], errors='coerce')
+    df["id_client"] = df["id_client"].astype(str).str.strip()
+    
     df = df.dropna(subset=["id_prod", "prix", "date_vente"])
     df = df[["id_prod", "prix", "date_vente", "id_client"]]
 
@@ -61,6 +66,10 @@ for file in review_files:
         "product_id": "id_prod",
         "grade": "note"
     })
+    
+    df["id_prod"] = df["id_prod"].astype(str)
+    df["note"] = pd.to_numeric(df["note"], errors='coerce')
+    
     df = df.dropna(subset=["id_prod", "note"])
     df = df[["id_prod", "note"]]
     dfs_reviews.append(df)
