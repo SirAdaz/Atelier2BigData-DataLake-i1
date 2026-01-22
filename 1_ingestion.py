@@ -12,6 +12,7 @@ from utils import Sale, Review
 def remove_files_from_dir(dir_name: str):
     dir_path = os.path.join(os.getcwd(), dir_name)
     if not os.path.exists(dir_path):
+        print("Error : No such file or directory : "+ dir_path)
         return
     for file in os.listdir(dir_path):
         os.remove(os.path.join(dir_path, file))
