@@ -18,9 +18,9 @@ def remove_files_from_dir(dir_name: str):
         os.remove(os.path.join(dir_path, file))
     print("folder cleaned")
 
-def create_sale(nb_file: int, nb_product: int, date, faker):
+def create_sale(id: int, date, faker):
     # product_id, prix, date, client
-    product_id = nb_file * 1000 + nb_product
+    product_id = id
     price = random.randint(1, 99999)/ 100 # gives us a random decimal value between 0.00 and 999.99 (included)
     return Sale(product_id, price, date, faker.name())
 
@@ -38,8 +38,12 @@ def create_sales_data(nb_files: int, faker) -> list[int]:
         with open("./bronze/sales_data_"+date_of_file+".csv","w") as file:
             file.write("product_id,price,date,client\n")
 
-            for p in range(nb_sales):
-                sale = create_sale(f,p,date_of_file, faker)
+            for p in range(1,nb_sales+1):
+                if p > 1 and random.randint(0,4) == 0 :
+                    id_p = random.choice(product_ids)
+                else :
+                    id_p = f * 1000 + p
+                sale = create_sale(id_p,date_of_file, faker)
 
                 file.write(sale.to_csv_line())
                 product_ids.append(sale.product_id)

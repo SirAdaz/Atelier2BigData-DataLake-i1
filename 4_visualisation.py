@@ -45,7 +45,7 @@ df_plot = df_with_reviews if len(df_with_reviews) > 0 else df
 
 # Vérifier s'il y a de la variance dans les ventes
 ventes_unique = df_plot['nombre_ventes'].nunique()
-if ventes_unique == 1:
+if True : #if ventes_unique == 1:
     # Si tous les produits ont le même nombre de ventes, utiliser le CA à la place
     x_data = df_plot['chiffre_affaires']
     x_label = 'Chiffre d\'affaires (€)'
